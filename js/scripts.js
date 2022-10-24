@@ -6,6 +6,9 @@ function newString(string)  {
   let lastLetter = string.slice(-1);
   lastLetter = lastLetter.toUpperCase();
   window.alert(lastLetter);
+  let newStr = firstLetter + lastLetter;
+  window.alert(newStr);
+  return newStr;
 }
 //user interface
 let  string = window.prompt("Please enter a sentence");
