@@ -1,6 +1,7 @@
 //business logic
 let newStr;
 let reversedString;
+let finalString;
 function newString(string)  {
   let firstLetter = string.slice(0, 1);
   firstLetter = firstLetter.toUpperCase();
@@ -22,17 +23,19 @@ function reverse(string)  {
 function call() {
   newString(string);
   reverse(newStr);
-  let finalString = string.concat(reversedString);
+  finalString = string.concat(reversedString);
   window.alert(finalString);
   return finalString;
 }
 function countLetter(string) {
-let lengthOfString = string.length;
+let lengthOfString = finalString.length;
 window.alert(lengthOfString);
-let letter =string.charAt(Math.floor(lengthOfString / 2));
+let letter =finalString.charAt(Math.floor(lengthOfString / 2));
 window.alert(letter);
-let newSentence = letter.concat(string)
+let newSentence = letter.concat(finalString)
 window.alert(newSentence);
+let reversedSentence =newSentence.split("").reverse().join("");
+window.alert(reversedSentence);
 
 
 }
