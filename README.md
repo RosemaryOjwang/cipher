@@ -15,7 +15,7 @@
 ## Setup/Installation Requirements
 1. _Clone this repository to your desktop._
 2. _Navigate to the top level of this directory._
-3. Open [index.html](index.html) fron your browser._
+3. _Open [index.html](index.html) fron your browser._
 
 ## License
 
