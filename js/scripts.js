@@ -26,7 +26,18 @@ function call() {
   window.alert(finalString);
   return finalString;
 }
+function countLetter(string) {
+let lengthOfString = string.length;
+window.alert(lengthOfString);
+let letter =string.charAt(Math.floor(lengthOfString / 2));
+window.alert(letter);
+let newSentence = letter.concat(string)
+window.alert(newSentence);
+
+
+}
 //user interface
 let  string = window.prompt("Please enter a sentence");
 window.alert(string);
 call();
+countLetter(string);
