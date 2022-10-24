@@ -8,9 +8,9 @@
 * JavaScript
 
 ## Description
->_The app prompts the user to enter a sentence. It then copies the first and last letters of that sentence, capitalizes, reverses and concatenates them to the end of the sentence entered._
+>_The app prompts the user, through window.prompt, to enter a sentence. It then copies the first and last letters, through slice() method, of that sentence, capitalizes through toUpperCase() method, reverses using split(""), reverse() & join("") methods, and concatenates ,through concat() method, them to the end of the sentence entered._
 >
->_The middle character of the original sentence is then copied to the beginning of the resultant sentence. And finally, it reverses the entire new sentence produced, and returns the same._
+>_The middle character of the original sentence is then copied, through charAt() method and concat() methods, to the beginning of the resultant sentence. And finally, it reverses the entire new sentence produced, and returns and displays the same through window.alert() method._
 >
 ## Setup/Installation Requirements
 1. _Clone this repository to your desktop._
