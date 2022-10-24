@@ -1,5 +1,6 @@
 //business logic
 let newStr;
+let reversedString;
 function newString(string)  {
   let firstLetter = string.slice(0, 1);
   firstLetter = firstLetter.toUpperCase();
@@ -14,14 +15,18 @@ function newString(string)  {
 function reverse(string)  {
   let firstLetter = newStr.slice(0,1);
   let secondLetter = newStr.slice(-1);
-  let reversedString = secondLetter.concat(firstLetter);
+  reversedString = secondLetter.concat(firstLetter);
   window.alert(reversedString);
   return reversedString;
 }
 function call() {
   newString(string);
-  reverse(newString(string));
+  reverse(newStr);
+  let finalString = string.concat(reversedString);
+  window.alert(finalString);
+  return finalString;
 }
 //user interface
 let  string = window.prompt("Please enter a sentence");
 window.alert(string);
+call();
